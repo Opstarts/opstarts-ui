@@ -14,6 +14,11 @@
     "react",
     "opstarts"
   ],
+  "browserify": {
+    "transform": [
+      ["reactify", { "es6": true }]
+    ]
+  },
   "author": "Billy Vong <billyvg@gmail.com>",
   "license": "MIT",
   "bugs": {
