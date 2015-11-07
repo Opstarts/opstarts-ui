@@ -1,3 +1,4 @@
 module.exports = {
-  Button: require('./src/button')
+  Button: require('./src/button'),
+  Icon: require('./src/icon'),
 };
