@@ -6,7 +6,7 @@
   "env": {
     "browser": true,
     "node": true,
-    "meteor": true
+    "mocha": true,
   },
   "ecmaFeatures": {
     "arrowFunctions": true,
