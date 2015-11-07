@@ -4,7 +4,7 @@
   "description": "Opstarts React UI components",
   "main": "index.jsx",
   "scripts": {
-    "test": "mocha --compilers .:babel-core/register test/*test.jsx"
+    "test": "mocha --compilers .:babel-core/register test/*test.js"
   },
   "repository": {
     "type": "git",
