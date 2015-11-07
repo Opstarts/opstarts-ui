@@ -6,7 +6,7 @@ class Button extends React.Component {
     const {
       className,
       children,
-      type,
+      theme,
       ...props
     } = this.props;
 
@@ -15,16 +15,16 @@ class Button extends React.Component {
       'btn-sm': this.props.size === 'small',
       'btn-xs': this.props.size === 'extra-small',
       'btn-lg': this.props.size === 'large',
-      [`btn-${this.props.type}`]: true,
+      [`btn-${this.props.theme}`]: true,
     }, className);
 
-    return <button
-      type="button"
-      {...props}
-      className={buttonClassNames}
-      >
-      {children}
-    </button>;
+    return (
+      <button
+        {...props}
+        className={buttonClassNames}>
+        {children}
+      </button>
+    );
   }
 }
 
@@ -33,6 +33,9 @@ Button.propTypes = {
     'small', 'extra-small', 'large',
   ]),
   type: React.PropTypes.oneOf([
+    'button', 'submit',
+  ]),
+  theme: React.PropTypes.oneOf([
     'default', 'danger', 'success', 'info'
   ]),
   className: React.PropTypes.string,
@@ -40,7 +43,8 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-  type: 'default'
+  type: 'button',
+  theme: 'default'
 };
 
 
