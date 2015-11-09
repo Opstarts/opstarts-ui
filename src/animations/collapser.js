@@ -7,6 +7,7 @@
  */
 /* globals $ */
 
+const React = require('react/addons');
 const ReactDOM = require('react-dom');
 
 class CollapserTransitionChild extends React.Component {
