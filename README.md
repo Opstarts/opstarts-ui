@@ -1,2 +1,2 @@
 # opstarts-ui
-Opstarst React UI components
+Opstarts UI components
