@@ -6,10 +6,10 @@ const classNames = require('classnames');
 
 class Icon extends React.Component {
   render() {
-    const cx = classNames({
-      [this.props.type]: true,
-      [`${this.props.type}-${this.props.name}`]: true
-    });
+    const cx = classNames(
+      this.props.type,
+      `${this.props.type}-${this.props.name}`
+    );
 
     return <i className={cx} />;
   }
