@@ -7,8 +7,9 @@
  */
 /* globals $ */
 
-const React = require('react/addons');
+const React = require('react');
 const ReactDOM = require('react-dom');
+const TransitionGroup = require('react-addons-transition-group');
 
 class CollapserTransitionChild extends React.Component {
   componentWillEnter(done) {
@@ -70,7 +71,6 @@ class Collapser extends React.Component {
   }
 
   render() {
-    const TransitionGroup = React.addons.TransitionGroup;
     const {
       visible,
       children,
