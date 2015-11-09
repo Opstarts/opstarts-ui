@@ -33,7 +33,8 @@
   "homepage": "https://github.com/Opstarts/opstarts-ui#readme",
   "dependencies": {
     "classnames": "^2.2.0",
-    "react": "^0.14.2"
+    "react": "^0.14.2",
+    "react-dom": "^0.14.2"
   },
   "devDependencies": {
     "babel-core": "^6.1.2",
